@@ -1,38 +1,615 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(175, 175, 175);
+}
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-track{
+    background: black;
+}
+::-webkit-scrollbar-thumb{
+    background: white;
+    border-radius: 10px;
+}
+.header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: black;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    z-index: 10;
+}
+.header-link{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    margin: 1rem;
+    text-transform: uppercase;
+}
+.header-img{
+    margin: .5rem;
+    height: 80px;
+    width: 80px;
+}
+.card-container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 1rem;
+    padding: 5rem;
+    height: 100vh;
+}
+.card{
+    position: absolute;
+    width: 350px;
+    margin-bottom: 2rem;
+    border: 1px solid black;
+    padding: 1rem;
+    background: white;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card:nth-child(1) {
+    animation: move-card-1 25s infinite linear;
+    margin-top: 30rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card:nth-child(2) {
+    animation: move-card-2 25s infinite linear;
+    margin-top: 30rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card:nth-child(3) {
+    animation: move-card-3 25s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(4) {
+    animation: move-card-4 25s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(5) {
+    animation: move-card-5 25s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(6) {
+    animation: move-card-6 25s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(7) {
+    animation: none;
+    margin-top: 30rem;
+}
+.card:nth-child(8) {
+    animation: move-card-1 25s infinite linear;
+}
+.card:nth-child(9) {
+    animation: move-card-2 25s infinite linear;
+}
+.card:nth-child(10) {
+    animation: move-card-3 25s infinite linear;
+}
+.card:nth-child(11) {
+    animation: move-card-4 25s infinite linear;
+}
+.card:nth-child(12) {
+    animation: move-card-5 25s infinite linear;
+}
+.card:nth-child(13) {
+    animation: move-card-6 25s infinite linear;
+}
+.card:nth-child(14) {
+    animation: none;
+}
+.card:nth-child(15) {
+    animation: move-card-1 15s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(16) {
+    animation: move-card-2 15s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(17) {
+    animation: move-card-3 15s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(15) {
+    animation: move-card-4 15s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(16) {
+    animation: move-card-5 15s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(17) {
+    animation: move-card-6 15s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(18) {
+    animation: move-card-1 10s infinite linear;
+}
+.card:nth-child(19) {
+    animation: move-card-2 10s infinite linear;
+}
+.card:nth-child(20) {
+    animation: move-card-3 10s infinite linear;
+}
+.card:nth-child(21) {
+    animation: move-card-4 10s infinite linear;
+}
+.card:nth-child(22) {
+    animation: move-card-5 10s infinite linear;
+}
+.card:nth-child(23) {
+    animation: move-card-6 10s infinite linear;
+}
+.card:nth-child(24) {
+    animation: move-card-1 5s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(25) {
+    animation: move-card-2 5s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(26) {
+    animation: move-card-3 5s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(27) {
+    animation: move-card-4 5s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(28) {
+    animation: move-card-5 5s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(29) {
+    animation: move-card-6 5s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(30) {
+    animation: move-card-7 5s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(31) {
+    animation: move-card-8 5s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(32) {
+    animation: move-card-1 5s infinite linear;
+}
+.card:nth-child(33) {
+    animation: move-card-2 5s infinite linear;
+}
+.card:nth-child(34) {
+    animation: move-card-3 5s infinite linear;
+}
+.card:nth-child(35) {
+    animation: move-card-4 5s infinite linear;
+}
+.card:nth-child(36) {
+    animation: move-card-5 5s infinite linear;
+}
+.card:nth-child(37) {
+    animation: move-card-6 5s infinite linear;
+}
+.card:nth-child(38) {
+    animation: move-card-7 5s infinite linear;
+}
+.card:nth-child(39) {
+    animation: move-card-8 5s infinite linear;
+}
+.card:nth-child(40) {
+    animation: move-card-1 30s infinite linear;
+}
+.card:nth-child(41) {
+    animation: move-card-2 30s infinite linear;
+}
+.card:nth-child(42) {
+    animation: move-card-3 30s infinite linear;
+}
+.card:nth-child(43) {
+    animation: move-card-4 30s infinite linear;
+}
+.card:nth-child(44) {
+    animation: move-card-5 30s infinite linear;
+}
+.card:nth-child(45) {
+    animation: move-card-6 30s infinite linear;
+}
+.card:nth-child(46) {
+    animation: move-card-7 30s infinite linear;
+}
+.card:nth-child(47) {
+    animation: move-card-8 30s infinite linear;
+}
+.card:nth-child(48) {
+    animation: move-card-1 30s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(49) {
+    animation: move-card-2 30s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(50) {
+    animation: move-card-3 30s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(51) {
+    animation: move-card-4 30s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(52) {
+    animation: move-card-5 30s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(53) {
+    animation: move-card-6 30s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(54) {
+    animation: move-card-7 30s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(55) {
+    animation: move-card-8 30s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(56) {
+    animation: move-card-1 35s infinite linear;
+}
+.card:nth-child(57) {
+    animation: move-card-2 35s infinite linear;
+}
+.card:nth-child(58) {
+    animation: move-card-3 35s infinite linear;
+}
+.card:nth-child(59) {
+    animation: move-card-4 35s infinite linear;
+}
+.card:nth-child(60) {
+    animation: move-card-5 35s infinite linear;
+}
+.card:nth-child(61) {
+    animation: move-card-6 35s infinite linear;
+}
+.card:nth-child(62) {
+    animation: move-card-7 35s infinite linear;
+}
+.card:nth-child(63) {
+    animation: move-card-8 35s infinite linear;
+}
+.card:nth-child(64) {
+    animation: move-card-1 35s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(65) {
+    animation: move-card-2 35s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(66) {
+    animation: move-card-3 35s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(67) {
+    animation: move-card-4 35s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(68) {
+    animation: move-card-5 35s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(69) {
+    animation: move-card-6 35s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(70) {
+    animation: move-card-7 35s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(71) {
+    animation: move-card-8 35s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(72) {
+    animation: move-card-1 38s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(73) {
+    animation: move-card-2 38s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(74) {
+    animation: move-card-3 38s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(75) {
+    animation: move-card-4 38s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(76) {
+    animation: move-card-5 38s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(77) {
+    animation: move-card-6 38s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(78) {
+    animation: move-card-7 38s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(79) {
+    animation: move-card-8 38s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(80) {
+    animation: move-card-1 38s infinite linear;
+}
+.card:nth-child(81) {
+    animation: move-card-2 38s infinite linear;
+}
+.card:nth-child(82) {
+    animation: move-card-3 38s infinite linear;
+}
+.card:nth-child(83) {
+    animation: move-card-4 38s infinite linear;
+}
+.card:nth-child(84) {
+    animation: move-card-5 38s infinite linear;
+}
+.card:nth-child(85) {
+    animation: move-card-6 38s infinite linear;
+}
+.card:nth-child(86) {
+    animation: move-card-7 38s infinite linear;
+}
+.card:nth-child(87) {
+    animation: move-card-8 38s infinite linear;
+}
+.card:nth-child(88) {
+    animation: move-card-1 8s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(89) {
+    animation: move-card-2 8s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(90) {
+    animation: move-card-3 8s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(91) {
+    animation: move-card-4 8s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(92) {
+    animation: move-card-5 8s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(93) {
+    animation: move-card-6 8s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(94) {
+    animation: move-card-7 8s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(95) {
+    animation: move-card-8 8s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(96) {
+    animation: move-card-1 15s infinite linear;
+}
+.card:nth-child(97) {
+    animation: move-card-2 15s infinite linear;
+}
+.card:nth-child(98) {
+    animation: move-card-3 15s infinite linear;
+}
+.card:nth-child(99) {
+    animation: move-card-4 15s infinite linear;
+}
+.card:nth-child(100) {
+    animation: move-card-5 15s infinite linear;
+}
+.card:nth-child(101) {
+    animation: move-card-6 15s infinite linear;
+}
+.card:nth-child(102) {
+    animation: move-card-7 15s infinite linear;
+}
+.card:nth-child(103) {
+    animation: move-card-8 15s infinite linear;
+}
+.card:nth-child(104) {
+    animation: move-card-1 20s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(105) {
+    animation: move-card-2 20s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(106) {
+    animation: move-card-3 20s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(107) {
+    animation: move-card-4 20s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(108) {
+    animation: move-card-5 20s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(109) {
+    animation: move-card-6 20s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(110) {
+    animation: move-card-7 20s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(111) {
+    animation: move-card-8 20s infinite linear;
+    margin-top: 30rem;
+}
+.card:nth-child(112) {
+    animation: move-card-1 20s infinite linear;
+}
+.card:nth-child(113) {
+    animation: move-card-2 20s infinite linear;
+}
+.card:nth-child(114) {
+    animation: move-card-3 20s infinite linear;
+}
+.card:nth-child(115) {
+    animation: move-card-4 20s infinite linear;
+}
+.card:nth-child(116) {
+    animation: move-card-5 20s infinite linear;
+}
+.card:nth-child(117) {
+    animation: move-card-6 20s infinite linear;
+}
+.card:nth-child(118) {
+    animation: move-card-7 20s infinite linear;
+}
+.card:nth-child(119) {
+    animation: move-card-8 20s infinite linear;
+}
+.card:nth-child(120) {
+    animation: move-card-1 13s infinite linear;
+}
+.card:nth-child(121) {
+    animation: none;
+    margin-top: 30rem;
 }
 
-.App-link {
-  color: #61dafb;
+@keyframes move-card-1 {
+    0% {
+        transform: translateX(0rem);
+    }
+    100% {
+        transform: translateX(-40rem);
+    }
+}
+@keyframes move-card-2 {
+    0% {
+        transform: translateX(-40rem);
+    }
+    100% {
+        transform: translateX(0rem);
+    }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes move-card-3 {
+    0% {
+        transform: translateX(0rem);
+    }
+    100% {
+        transform: translateX(-20rem);
+    }
+}
+@keyframes move-card-4 {
+    0% {
+        transform: translateX(-20rem);
+    }
+    100% {
+        transform: translateX(0rem);
+    }
+}
+@keyframes move-card-5 {
+    0% {
+        transform: translateX(0rem);
+    }
+    100% {
+        transform: translateX(30rem);
+    }
+}
+@keyframes move-card-6 {
+    0% {
+        transform: translateX(30rem);
+    }
+    100% {
+        transform: translateX(0rem);
+    }
+}
+@keyframes move-card-7 {
+    0% {
+        transform: translateX(40rem);
+    }
+    100% {
+        transform: translateX(0rem);
+    }
+}
+@keyframes move-card-8 {
+    0% {
+        transform: translateX(0rem);
+    }
+    100% {
+        transform: translateX(40rem);
+    }
+}
+.card{
+    z-index: 1;
+}
+.card:hover{
+    z-index: 100;
+}
+.card-img img{
+    width: 350px;
+    height: 350px;
+    cursor: pointer;
+}
+.card-img img:hover{
+    transform: scale(1.5);
+    border-radius: 50%;
+    z-index: 100;
+}
+.card-img p{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 700;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background: black;
+}
+.link{
+    color: white;
+    font-size: 30px;
+    margin: 1rem;
+}
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-name{
+    color: white;
+}
+
+@media (max-width: 540px){
+    .card{
+        width: 150px;
+    }
+    .card-img img{
+        width: 120px;
+        height: 120px;
+    }
+    .card-img p{
+        font-size: 12px;
+    }
 }
