@@ -9,7 +9,6 @@ const RandomCard = () => {
                     <div className='card' key={id}>
                         <div className="card-img">
                             <img src={image} alt="illustartion" />
-                            <p>{title}</p>
                         </div>
                     </div>
                 )
