@@ -42,49 +42,88 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 1rem;
     padding: 5rem;
     height: 100vh;
 }
 .card{
     position: absolute;
-    width: 350px;
-    margin-bottom: 2rem;
+    z-index: 1;
     border: 1px solid black;
     padding: 1rem;
     background: white;
     box-shadow: 0 10px 10px rgba(0,0,0,0.5);
 }
+.card:hover{
+    z-index: 100;
+}
+.card-img img{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+}
+.card-img img:hover{
+    transform: scale(1.5);
+    border-radius: 50%;
+    z-index: 100;
+}
+.card-img p{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 700;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background: black;
+}
+.link{
+    color: white;
+    font-size: 30px;
+    margin: 1rem;
+}
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-name{
+    color: white;
+}
 
 .card:nth-child(1) {
     animation: move-card-1 25s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 
 .card:nth-child(2) {
     animation: move-card-2 25s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 
 .card:nth-child(3) {
     animation: move-card-3 25s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(4) {
     animation: move-card-4 25s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(5) {
     animation: move-card-5 25s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(6) {
     animation: move-card-6 25s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(7) {
     animation: none;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(8) {
     animation: move-card-1 25s infinite linear;
@@ -109,27 +148,27 @@ body{
 }
 .card:nth-child(15) {
     animation: move-card-1 15s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(16) {
     animation: move-card-2 15s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(17) {
     animation: move-card-3 15s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(15) {
     animation: move-card-4 15s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(16) {
     animation: move-card-5 15s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(17) {
     animation: move-card-6 15s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(18) {
     animation: move-card-1 10s infinite linear;
@@ -151,35 +190,35 @@ body{
 }
 .card:nth-child(24) {
     animation: move-card-1 5s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(25) {
     animation: move-card-2 5s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(26) {
     animation: move-card-3 5s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(27) {
     animation: move-card-4 5s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(28) {
     animation: move-card-5 5s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(29) {
     animation: move-card-6 5s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(30) {
     animation: move-card-7 5s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(31) {
     animation: move-card-8 5s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(32) {
     animation: move-card-1 5s infinite linear;
@@ -231,35 +270,35 @@ body{
 }
 .card:nth-child(48) {
     animation: move-card-1 30s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(49) {
     animation: move-card-2 30s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(50) {
     animation: move-card-3 30s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(51) {
     animation: move-card-4 30s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(52) {
     animation: move-card-5 30s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(53) {
     animation: move-card-6 30s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(54) {
     animation: move-card-7 30s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(55) {
     animation: move-card-8 30s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(56) {
     animation: move-card-1 35s infinite linear;
@@ -287,67 +326,67 @@ body{
 }
 .card:nth-child(64) {
     animation: move-card-1 35s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(65) {
     animation: move-card-2 35s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(66) {
     animation: move-card-3 35s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(67) {
     animation: move-card-4 35s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(68) {
     animation: move-card-5 35s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(69) {
     animation: move-card-6 35s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(70) {
     animation: move-card-7 35s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(71) {
     animation: move-card-8 35s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(72) {
     animation: move-card-1 38s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(73) {
     animation: move-card-2 38s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(74) {
     animation: move-card-3 38s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(75) {
     animation: move-card-4 38s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(76) {
     animation: move-card-5 38s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(77) {
     animation: move-card-6 38s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(78) {
     animation: move-card-7 38s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(79) {
     animation: move-card-8 38s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(80) {
     animation: move-card-1 38s infinite linear;
@@ -375,35 +414,35 @@ body{
 }
 .card:nth-child(88) {
     animation: move-card-1 8s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(89) {
     animation: move-card-2 8s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(90) {
     animation: move-card-3 8s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(91) {
     animation: move-card-4 8s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(92) {
     animation: move-card-5 8s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(93) {
     animation: move-card-6 8s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(94) {
     animation: move-card-7 8s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(95) {
     animation: move-card-8 8s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(96) {
     animation: move-card-1 15s infinite linear;
@@ -431,35 +470,35 @@ body{
 }
 .card:nth-child(104) {
     animation: move-card-1 20s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(105) {
     animation: move-card-2 20s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(106) {
     animation: move-card-3 20s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(107) {
     animation: move-card-4 20s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(108) {
     animation: move-card-5 20s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(109) {
     animation: move-card-6 20s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(110) {
     animation: move-card-7 20s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(111) {
     animation: move-card-8 20s infinite linear;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 .card:nth-child(112) {
     animation: move-card-1 20s infinite linear;
@@ -490,7 +529,7 @@ body{
 }
 .card:nth-child(121) {
     animation: none;
-    margin-top: 30rem;
+    margin-top: 25rem;
 }
 
 @keyframes move-card-1 {
@@ -558,48 +597,7 @@ body{
         transform: translateX(40rem);
     }
 }
-.card{
-    z-index: 1;
-}
-.card:hover{
-    z-index: 100;
-}
-.card-img img{
-    width: 350px;
-    height: 350px;
-    cursor: pointer;
-}
-.card-img img:hover{
-    transform: scale(1.5);
-    border-radius: 50%;
-    z-index: 100;
-}
-.card-img p{
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-    font-weight: 700;
-}
-.footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    background: black;
-}
-.link{
-    color: white;
-    font-size: 30px;
-    margin: 1rem;
-}
-.footer-links{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.footer-name{
-    color: white;
-}
+
 
 @media (max-width: 540px){
     .card{
