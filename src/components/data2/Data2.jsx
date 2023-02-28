@@ -43,6 +43,17 @@ import IMG42 from '../../images2/42.png'
 import IMG43 from '../../images2/43.png'
 import IMG44 from '../../images2/44.png'
 import IMG45 from '../../images2/45.png'
+import IMG46 from '../../images2/46.png'
+import IMG47 from '../../images2/47.png'
+import IMG48 from '../../images2/48.png'
+import IMG49 from '../../images2/49.png'
+import IMG50 from '../../images2/50.png'
+import IMG51 from '../../images2/51.png'
+import IMG52 from '../../images2/52.png'
+import IMG53 from '../../images2/53.png'
+import IMG54 from '../../images2/54.png'
+import IMG55 from '../../images2/55.png'
+import IMG56 from '../../images2/56.png'
 
 const data2 = [
     {
@@ -269,6 +280,61 @@ const data2 = [
         id: 45,
         image: IMG45,
         title: 'Image 45',
+    },
+    {
+        id: 46,
+        image: IMG46,
+        title: 'Image 46',
+    },
+    {
+        id: 47,
+        image: IMG47,
+        title: 'Image 47',
+    },
+    {
+        id: 48,
+        image: IMG48,
+        title: 'Image 48',
+    },
+    {
+        id: 49,
+        image: IMG49,
+        title: 'Image 49',
+    },
+    {
+        id: 50,
+        image: IMG50,
+        title: 'Image 50',
+    },
+    {
+        id: 51,
+        image: IMG51,
+        title: 'Image 51',
+    },
+    {
+        id: 52,
+        image: IMG52,
+        title: 'Image 52',
+    },
+    {
+        id: 53,
+        image: IMG53,
+        title: 'Image 53',
+    },
+    {
+        id: 54,
+        image: IMG54,
+        title: 'Image 54',
+    },
+    {
+        id: 55,
+        image: IMG55,
+        title: 'Image 55',
+    },
+    {
+        id: 56,
+        image: IMG56,
+        title: 'Image 56',
     },
 ]
 
