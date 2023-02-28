@@ -44,6 +44,19 @@ body{
     justify-content: space-around;
     padding: 5rem;
     height: 100vh;
+    width: 80%;
+    overflow: hidden;
+}
+.card-container2{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5rem;
+    height: 100vh;
+    margin-top: -20rem;
+    width: 80%;
+    overflow: hidden;
 }
 .card{
     position: absolute;
@@ -599,6 +612,11 @@ body{
 
 
 @media (max-width: 540px){
+    .card-container,
+    .card-container2{
+        width: 50%;
+        overflow: hidden;
+    }
     .card{
         width: 150px;
     }
