@@ -199,60 +199,60 @@ body{
     animation: move-card-6 10s infinite linear;
 }
 .card:nth-child(24) {
-    animation: move-card-1 5s infinite linear;
+    animation: move-card-1 25s infinite linear;
     margin-top: 25rem;
 }
 .card:nth-child(25) {
-    animation: move-card-2 5s infinite linear;
+    animation: move-card-2 25s infinite linear;
     margin-top: 25rem;
 }
 .card:nth-child(26) {
-    animation: move-card-3 5s infinite linear;
+    animation: move-card-3 25s infinite linear;
     margin-top: 25rem;
 }
 .card:nth-child(27) {
-    animation: move-card-4 5s infinite linear;
+    animation: move-card-4 25s infinite linear;
     margin-top: 25rem;
 }
 .card:nth-child(28) {
-    animation: move-card-5 5s infinite linear;
+    animation: move-card-5 25s infinite linear;
     margin-top: 25rem;
 }
 .card:nth-child(29) {
-    animation: move-card-6 5s infinite linear;
+    animation: move-card-6 25s infinite linear;
     margin-top: 25rem;
 }
 .card:nth-child(30) {
-    animation: move-card-7 5s infinite linear;
+    animation: move-card-7 25s infinite linear;
     margin-top: 25rem;
 }
 .card:nth-child(31) {
-    animation: move-card-8 5s infinite linear;
+    animation: move-card-8 25s infinite linear;
     margin-top: 25rem;
 }
 .card:nth-child(32) {
-    animation: move-card-1 5s infinite linear;
+    animation: move-card-1 55s infinite linear;
 }
 .card:nth-child(33) {
-    animation: move-card-2 5s infinite linear;
+    animation: move-card-2 55s infinite linear;
 }
 .card:nth-child(34) {
-    animation: move-card-3 5s infinite linear;
+    animation: move-card-3 55s infinite linear;
 }
 .card:nth-child(35) {
-    animation: move-card-4 5s infinite linear;
+    animation: move-card-4 55s infinite linear;
 }
 .card:nth-child(36) {
-    animation: move-card-5 5s infinite linear;
+    animation: move-card-5 55s infinite linear;
 }
 .card:nth-child(37) {
-    animation: move-card-6 5s infinite linear;
+    animation: move-card-6 55s infinite linear;
 }
 .card:nth-child(38) {
-    animation: move-card-7 5s infinite linear;
+    animation: move-card-7 55s infinite linear;
 }
 .card:nth-child(39) {
-    animation: move-card-8 5s infinite linear;
+    animation: move-card-8 55s infinite linear;
 }
 .card:nth-child(40) {
     animation: move-card-1 30s infinite linear;
@@ -423,35 +423,35 @@ body{
     animation: move-card-8 38s infinite linear;
 }
 .card:nth-child(88) {
-    animation: move-card-1 8s infinite linear;
+    animation: move-card-1 48s infinite linear;
     margin-top: 25rem;
 }
 .card:nth-child(89) {
-    animation: move-card-2 8s infinite linear;
+    animation: move-card-2 48s infinite linear;
     margin-top: 25rem;
 }
 .card:nth-child(90) {
-    animation: move-card-3 8s infinite linear;
+    animation: move-card-3 48s infinite linear;
     margin-top: 25rem;
 }
 .card:nth-child(91) {
-    animation: move-card-4 8s infinite linear;
+    animation: move-card-4 48s infinite linear;
     margin-top: 25rem;
 }
 .card:nth-child(92) {
-    animation: move-card-5 8s infinite linear;
+    animation: move-card-5 48s infinite linear;
     margin-top: 25rem;
 }
 .card:nth-child(93) {
-    animation: move-card-6 8s infinite linear;
+    animation: move-card-6 48s infinite linear;
     margin-top: 25rem;
 }
 .card:nth-child(94) {
-    animation: move-card-7 8s infinite linear;
+    animation: move-card-7 48s infinite linear;
     margin-top: 25rem;
 }
 .card:nth-child(95) {
-    animation: move-card-8 8s infinite linear;
+    animation: move-card-8 48s infinite linear;
     margin-top: 25rem;
 }
 .card:nth-child(96) {
