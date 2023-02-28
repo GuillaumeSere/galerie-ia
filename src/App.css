@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    background: rgb(175, 175, 175);
+    background: url(./images/56.png);
 }
 ::-webkit-scrollbar{
     width: 7px;
